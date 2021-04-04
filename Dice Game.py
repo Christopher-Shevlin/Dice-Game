@@ -10,6 +10,7 @@ while True:
     print("Your score so far is: ", score)
     print("What's it to be? Higher or Lower?")
     user = input("Higher (H) or Lower (L) > ")
+    print("**********************************************")
 
 
 
