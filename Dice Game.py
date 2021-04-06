@@ -4,20 +4,29 @@ start =  False
 name = input("What is your name? > ")
 
 while start == False:
-             print(f"Hello", name, """This is the Higher / Lower game, simply decide if the next roll will be higher or lower
-than the previous. Get it right you get 1 point. Get wrong you lose 2 points! Get to 10 points
-to be the winner!""")
-             number = randint(1,6)
-             score = 0
+             print(f"Hello", name, """This is the Higher / Lower game. Choose how much of your bank balance to
+bet on your next roll. If you roll under 7 you win your stake back +50%, if you
+roll a 7 or over you lose your stake! The dice is numbered 1 - 13""")
+             number = randint(1,13)
+             bank_bal = "£" + str(100)
 
-
-             print("Roll = " + str(number))
-             print("Your score so far is: ", score)
-             print("What's it to be? Higher or Lower?")
-             user = input("Higher (H) or Lower (L) > ")
+             print("Balance: ", bank_bal)
+             print("How much do you want to bet?")
+             print("DICE: = " + str(number))
+             user = input("> £")
              print("**********************************************")
-             if user == 'H':
-                 start = True
-                 if number <7:
-                    print("Test")
+             start = True
+             if number < 7:
+                 print("You win!")
+             bank_bal += str(1)
+             print("Balance: ", bank_bal)
+            
+                    
+
+
+    
+
+
+
+
                     
